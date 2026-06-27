@@ -1,12 +1,12 @@
 /* ===================== CONTACT PAGE ===================== */
-.contact-section { padding: 56px 0 80px; background: var(--bg); }
+.contact-section { padding: 40px 0 70px; background: var(--bg); }
 
 /* ---- Top Strip ---- */
 .contact-strip {
   display: flex; align-items: center; gap: 0;
   background: #fff; border: 1px solid var(--border);
   border-radius: var(--radius-lg); padding: 22px 32px;
-  margin-bottom: 48px; box-shadow: var(--shadow-sm);
+  margin-bottom: 32px; box-shadow: var(--shadow-sm);
   flex-wrap: wrap;
 }
 .strip-item { display: flex; align-items: flex-start; gap: 12px; flex: 1; min-width: 200px; padding: 8px 24px 8px 0; }
@@ -61,6 +61,15 @@
   margin-top: 6px; transition: opacity 0.2s;
 }
 .cd-link:hover { opacity: 0.75; }
+
+/* ---- Map ---- */
+.contact-map-wrap {
+  margin-top: 16px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
 
 /* ---- Form Column ---- */
 .contact-form-col {

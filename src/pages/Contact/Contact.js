@@ -57,7 +57,7 @@ const Contact = () => {
       entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')),
       { threshold: 0.1 }
     );
-    sectionRef.current?.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    sectionRef.current?.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
     return () => observer.disconnect();
   }, []);
 
@@ -132,6 +132,19 @@ const Contact = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+
+              <div className="contact-map-wrap">
+                <iframe
+                  title="RH Network Solutions Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0!2d78.5!3d17.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b0000000001%3A0x0!2sEast+Marredpally%2C+Secunderabad%2C+Telangana!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                  width="100%"
+                  height="180"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
 
