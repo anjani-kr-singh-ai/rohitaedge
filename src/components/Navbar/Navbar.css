@@ -1,0 +1,123 @@
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 12px 0;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  transition: padding 0.3s ease;
+}
+.navbar.scrolled { padding: 8px 0; }
+
+.navbar-inner { display: flex; align-items: center; gap: 24px; }
+
+/* Logo */
+.navbar-logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+
+.logo-hex {
+  width: 36px; height: 36px; background: var(--primary);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+}
+.logo-hex span { font-size: 0.76rem; font-weight: 800; color: #fff; }
+
+.logo-text-wrap { display: flex; flex-direction: column; line-height: 1.1; }
+.logo-name { font-size: 0.9rem; font-weight: 700; color: var(--text); }
+.logo-tagline { font-size: 0.58rem; color: var(--primary); letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* Desktop nav */
+.navbar-links { display: flex; align-items: center; gap: 2px; margin-left: auto; }
+.nav-item { position: relative; }
+
+.nav-link {
+  display: flex; align-items: center; gap: 4px;
+  padding: 6px 12px; font-size: 0.85rem; font-weight: 500;
+  color: var(--text-secondary); border-radius: 6px;
+  background: none; transition: color 0.2s, background 0.2s; white-space: nowrap;
+}
+.nav-link:hover, .nav-link.active { color: var(--primary); background: var(--primary-light); }
+
+.chevron { transition: transform 0.2s ease; }
+.chevron.open { transform: rotate(180deg); }
+
+/* Dropdown */
+.dropdown-menu {
+  position: absolute; top: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%) translateY(-4px);
+  min-width: 240px; opacity: 0; visibility: hidden;
+  transition: all 0.2s ease; pointer-events: none; z-index: 200;
+}
+.dropdown-menu.open {
+  opacity: 1; visibility: visible;
+  transform: translateX(-50%) translateY(0); pointer-events: all;
+}
+
+.dropdown-inner {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 10px; padding: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+}
+
+.dropdown-item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 12px; font-size: 0.83rem;
+  color: var(--text-secondary); border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+.dropdown-item:hover { background: var(--primary-light); color: var(--primary); }
+.dropdown-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--primary); flex-shrink: 0; opacity: 0.35;
+}
+.dropdown-item:hover .dropdown-dot { opacity: 1; }
+
+/* CTA button */
+.navbar-cta { flex-shrink: 0; margin-left: 8px; padding: 8px 18px; font-size: 0.84rem; }
+
+/* Hamburger */
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; padding: 4px; margin-left: auto;
+}
+.hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: var(--text); border-radius: 2px;
+  transition: all 0.2s ease; transform-origin: center;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile menu */
+.mobile-menu {
+  display: none; flex-direction: column;
+  background: #ffffff; border-top: 1px solid var(--border);
+  padding: 10px 20px 18px; gap: 2px;
+  max-height: 0; overflow: hidden; transition: max-height 0.35s ease;
+}
+.mobile-menu.open { max-height: 100vh; }
+
+.mobile-nav-link {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 12px; font-size: 0.88rem; color: var(--text-secondary);
+  border-radius: 6px; background: none; transition: background 0.2s, color 0.2s;
+  width: 100%; text-align: left;
+}
+.mobile-nav-link:hover, .mobile-nav-link.active {
+  background: var(--primary-light); color: var(--primary);
+}
+
+.mobile-sub { display: flex; flex-direction: column; padding: 2px 0 2px 14px; gap: 1px; }
+.mobile-sub-link {
+  padding: 7px 12px; font-size: 0.83rem; color: var(--text-muted);
+  border-radius: 6px; display: block; transition: background 0.2s, color 0.2s;
+}
+.mobile-sub-link:hover { background: var(--primary-light); color: var(--primary); }
+
+.mobile-cta { margin-top: 10px; justify-content: center; }
+
+@media (max-width: 1024px) {
+  .navbar-links, .navbar-cta { display: none; }
+  .hamburger { display: flex; }
+  .mobile-menu { display: flex; }
+  .navbar-inner { gap: 0; }
+}

@@ -1,0 +1,20 @@
+.clients-section { padding: 80px 0; background: var(--bg-2); overflow: hidden; }
+
+.clients-track-wrap { position: relative; overflow: hidden; margin-top: 36px; }
+.clients-fade-left, .clients-fade-right { position: absolute; top: 0; bottom: 0; width: 80px; z-index: 2; pointer-events: none; }
+.clients-fade-left  { left: 0;  background: linear-gradient(to right, var(--bg-2), transparent); }
+.clients-fade-right { right: 0; background: linear-gradient(to left,  var(--bg-2), transparent); }
+
+.clients-track { display: flex; gap: 14px; animation: infiniteScroll 28s linear infinite; width: max-content; }
+.clients-track:hover { animation-play-state: paused; }
+
+.client-logo {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  min-width: 120px; padding: 18px 14px;
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); transition: var(--transition); cursor: default;
+  box-shadow: var(--shadow-sm);
+}
+.client-logo:hover { border-color: var(--primary); transform: translateY(-2px); box-shadow: var(--shadow); }
+.client-icon { width: 44px; height: 44px; background: var(--primary); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; color: #fff; }
+.client-name { font-size: 0.7rem; color: var(--text-secondary); text-align: center; line-height: 1.3; }

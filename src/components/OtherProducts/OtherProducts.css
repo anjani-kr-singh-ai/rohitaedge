@@ -1,0 +1,19 @@
+.other-products-section { padding: 80px 0; background: var(--bg-2); }
+
+.op-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+.op-card {
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 26px 20px;
+  transition: var(--transition); cursor: default; text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+.op-glow-border { display: none; }
+.op-card:hover { border-color: var(--primary); transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.op-icon { font-size: 1.5rem; color: var(--primary); margin-bottom: 10px; display: flex; justify-content: center; }
+.op-icon svg { width: 28px; height: 28px; }
+.op-title { font-size: 0.9rem; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+.op-desc { font-size: 0.81rem; color: var(--text-secondary); line-height: 1.6; }
+
+@media (max-width: 900px) { .op-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .op-grid { grid-template-columns: 1fr; } .other-products-section { padding: 60px 0; } }

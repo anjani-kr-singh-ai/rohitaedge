@@ -1,0 +1,2 @@
+/* Cursor glow disabled for clean UX */
+.cursor-dot, .cursor-ring { display: none; }
