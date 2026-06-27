@@ -3,14 +3,14 @@ import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const products = [
-  { name: 'Photocopier', path: '/products#photocopier' },
-  { name: 'Laptop & Desktops', path: '/products#laptops' },
-  { name: 'Laserjet & Dot Matrix Printers', path: '/products#printers' },
-  { name: 'CCTV Systems & Video Wall', path: '/products#cctv' },
-  { name: 'Biometric Devices', path: '/products#biometric' },
-  { name: 'Projectors', path: '/products#projectors' },
-  { name: 'IP Intercom System', path: '/products#intercom' },
-  { name: 'Large LED Display Panel', path: '/products#led' },
+  { name: 'Photocopier', path: '/products/photocopier' },
+  { name: 'Laptop & Desktops', path: '/products/laptops' },
+  { name: 'Laserjet & Dot Matrix Printers', path: '/products/printers' },
+  { name: 'CCTV Systems & Video Wall', path: '/products/cctv' },
+  { name: 'Biometric Devices', path: '/products/biometric' },
+  { name: 'Projectors', path: '/products/projectors' },
+  { name: 'IP Intercom System', path: '/products/intercom' },
+  { name: 'Large LED Display Panel', path: '/products/led' },
 ];
 
 const navLinks = [

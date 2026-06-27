@@ -7,10 +7,10 @@ import Footer from './components/Footer/Footer';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import ScrollProgress from './components/ScrollProgress/ScrollProgress';
 import BackToTop from './components/BackToTop/BackToTop';
-import CursorGlow from './components/CursorGlow/CursorGlow';
 
 import Home from './pages/Home/Home';
 import Products from './pages/Products/Products';
+import ProductDetail from './pages/ProductDetail/ProductDetail';
 import NetworkingSolutions from './pages/NetworkingSolutions/NetworkingSolutions';
 import Services from './pages/Services/Services';
 import About from './pages/About/About';
@@ -29,13 +29,13 @@ function App() {
 
   return (
     <Router>
-      <CursorGlow />
       <ScrollProgress />
       <Navbar />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/networking-solutions" element={<NetworkingSolutions />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
