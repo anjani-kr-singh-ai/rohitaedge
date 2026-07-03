@@ -1,4 +1,5 @@
-.page-hero { position: relative; padding: 110px 0 56px; background: var(--gradient); overflow: hidden; }
+.page-hero { position: relative; padding: 144px 0 56px; background: var(--gradient); overflow: hidden; }
+@media (max-width: 1024px) { .page-hero { padding-top: 110px; } }
 .page-hero-pattern {
   position: absolute; inset: 0; z-index: 1; opacity: 0.12;
   background-image: radial-gradient(circle, #ffffff 1.5px, transparent 1.5px);

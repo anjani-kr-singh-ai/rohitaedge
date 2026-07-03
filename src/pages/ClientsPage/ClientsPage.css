@@ -17,7 +17,7 @@
 .industry-count { font-size: 0.7rem; color: var(--primary); }
 
 .success-section { display: flex; justify-content: center; }
-.success-card { background: var(--primary-light); border: 1px solid rgba(37,99,235,0.2); border-radius: var(--radius-lg); padding: 44px 60px; text-align: center; max-width: 540px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.success-card { background: var(--primary-light); border: 1px solid rgba(219,39,119,0.2); border-radius: var(--radius-lg); padding: 44px 60px; text-align: center; max-width: 540px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .success-title { font-size: 1.2rem; font-weight: 700; color: var(--text); }
 .success-desc { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.7; }
 

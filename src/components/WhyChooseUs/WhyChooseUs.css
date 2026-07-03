@@ -14,7 +14,7 @@
 .why-icon svg { width: 26px; height: 26px; }
 .why-title { font-size: 0.88rem; font-weight: 700; color: var(--text); }
 .why-desc { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.6; }
-.why-number { position: absolute; top: 12px; right: 14px; font-size: 1.5rem; font-weight: 800; color: rgba(37,99,235,0.08); }
+.why-number { position: absolute; top: 12px; right: 14px; font-size: 1.5rem; font-weight: 800; color: rgba(219,39,119,0.08); }
 
 .counters-wrap { opacity: 0; transform: translateY(18px); transition: opacity 0.65s ease, transform 0.65s ease; }
 .counters-wrap.visible { opacity: 1; transform: translateY(0); }

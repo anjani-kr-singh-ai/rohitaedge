@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiMapPin, FiPhone, FiMail, FiClock, FiChevronRight, FiLinkedin, FiFacebook, FiInstagram, FiYoutube } from 'react-icons/fi';
+import { FiMapPin, FiPhone, FiMail, FiClock, FiChevronRight, FiYoutube } from 'react-icons/fi';
 import './Footer.css';
 
 const Footer = () => {
@@ -25,16 +25,6 @@ const Footer = () => {
                 <FiMapPin size={14} />
                 <span>H.No. 87/1317, Shop No. 02, 4th Class Employees Colony,<br />Nagireddy Colony Road No. 7, Revenue Ward No. 87,<br />Opp: Bishop Church, Kurnool – 518002,<br />Andhra Pradesh, India</span>
               </div>
-            </div>
-            <div className="footer-socials">
-              {[
-                { label: 'LinkedIn', icon: <FiLinkedin size={16} /> },
-                { label: 'Facebook', icon: <FiFacebook size={16} /> },
-                { label: 'Instagram', icon: <FiInstagram size={16} /> },
-                { label: 'YouTube', icon: <FiYoutube size={16} /> },
-              ].map(({ label, icon }) => (
-                <a key={label} href="#!" className="social-icon" aria-label={label}>{icon}</a>
-              ))}
             </div>
           </div>
 
