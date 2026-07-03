@@ -6,24 +6,21 @@ import ContactCTA from '../../components/ContactCTA/ContactCTA';
 import './ClientsPage.css';
 
 const brandList = [
-  { name: 'Canon', category: 'Photocopiers', initial: 'CN', color: '#BF0000' },
-  { name: 'HP', category: 'Laptops & Printers', initial: 'HP', color: '#0096D6' },
-  { name: 'Dell', category: 'Laptops & Desktops', initial: 'DL', color: '#007DB8' },
-  { name: 'Lenovo', category: 'Laptops & Desktops', initial: 'LN', color: '#E2231A' },
-  { name: 'Kyocera', category: 'Photocopiers', initial: 'KY', color: '#DA0C81' },
-  { name: 'Konica Minolta', category: 'Photocopiers', initial: 'KM', color: '#111111' },
-  { name: 'Epson', category: 'Printers & Projectors', initial: 'EP', color: '#003399' },
-  { name: 'Hikvision', category: 'CCTV & Surveillance', initial: 'HK', color: '#D0021B' },
-  { name: 'Dahua', category: 'CCTV & Surveillance', initial: 'DH', color: '#004C97' },
-  { name: 'CP Plus', category: 'CCTV & Surveillance', initial: 'CP', color: '#F7941E' },
-  { name: 'Axis', category: 'CCTV & Surveillance', initial: 'AX', color: '#1a1a1a' },
-  { name: 'ZKTeco', category: 'Biometric Devices', initial: 'ZK', color: '#00539B' },
-  { name: 'BenQ', category: 'Projectors', initial: 'BQ', color: '#8C1D82' },
-  { name: 'Optoma', category: 'Projectors', initial: 'OP', color: '#E4002B' },
-  { name: 'Samsung', category: 'LED Display Panels', initial: 'SM', color: '#1428A0' },
-  { name: 'LG', category: 'LED Display Panels', initial: 'LG', color: '#A50034' },
-  { name: 'Akuvox', category: 'IP Intercom', initial: 'AK', color: '#00A0E3' },
-  { name: 'Ricoh', category: 'Photocopiers', initial: 'RC', color: '#E60012' },
+  { name: 'Canon', category: 'Photocopiers', logo: '/brand-logos/canon.svg' },
+  { name: 'HP', category: 'Laptops & Printers', logo: '/brand-logos/hp.svg' },
+  { name: 'Dell', category: 'Laptops & Desktops', logo: '/brand-logos/dell.svg' },
+  { name: 'Lenovo', category: 'Laptops & Desktops', logo: '/brand-logos/lenovo.svg' },
+  { name: 'Kyocera', category: 'Photocopiers', logo: '/brand-logos/kyocera.svg' },
+  { name: 'Konica Minolta', category: 'Photocopiers', logo: '/brand-logos/konica-minolta.svg' },
+  { name: 'Epson', category: 'Printers & Projectors', logo: '/brand-logos/epson.svg' },
+  { name: 'Hikvision', category: 'CCTV & Surveillance', logo: '/brand-logos/hikvision.svg' },
+  { name: 'Dahua', category: 'CCTV & Surveillance', logo: '/brand-logos/dahua.svg' },
+  { name: 'Axis', category: 'CCTV & Surveillance', logo: '/brand-logos/axis.svg' },
+  { name: 'BenQ', category: 'Projectors', logo: '/brand-logos/benq.svg' },
+  { name: 'Optoma', category: 'Projectors', logo: '/brand-logos/optoma.png' },
+  { name: 'Samsung', category: 'LED Display Panels', logo: '/brand-logos/samsung.svg' },
+  { name: 'LG', category: 'LED Display Panels', logo: '/brand-logos/lg.svg' },
+  { name: 'Ricoh', category: 'Photocopiers', logo: '/brand-logos/ricoh.svg' },
 ];
 
 const industries = [
@@ -66,7 +63,7 @@ const ClientsPage = () => {
           <div className="clients-logo-grid">
             {brandList.map((c, i) => (
               <div key={c.name} className="client-card reveal" style={{ transitionDelay: `${i * 0.04}s` }}>
-                <div className="client-card-icon" style={{ background: c.color }}>{c.initial}</div>
+                <div className="client-card-icon"><img src={c.logo} alt={c.name} loading="lazy" /></div>
                 <div className="client-card-name">{c.name}</div>
                 <div className="client-card-sector">{c.category}</div>
               </div>
