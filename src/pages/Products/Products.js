@@ -10,6 +10,7 @@ const products = [
   {
     id: 'photocopier',
     icon: <FiCopy />,
+    image: '/photo-copier-small.jpg',
     title: 'Photocopier',
     subtitle: 'Multifunctional Office Copiers',
     color: 'var(--primary)',
@@ -20,6 +21,7 @@ const products = [
   {
     id: 'laptops',
     icon: <FiMonitor />,
+    image: '/lap-desktop-small.jpg',
     title: 'Laptop & Desktops',
     subtitle: 'Business Computing Solutions',
     color: 'var(--primary)',
@@ -30,6 +32,7 @@ const products = [
   {
     id: 'printers',
     icon: <FiPrinter />,
+    image: '/printers-ploters-small.jpg',
     title: 'Laserjet & Dot Matrix Printers',
     subtitle: 'Industrial Print Solutions',
     color: 'var(--primary)',
@@ -40,6 +43,7 @@ const products = [
   {
     id: 'cctv',
     icon: <FiCamera />,
+    image: '/cctv-small.jpg',
     title: 'CCTV Systems & Video Wall',
     subtitle: 'Complete Surveillance Solutions',
     color: 'var(--primary)',
@@ -80,6 +84,7 @@ const products = [
   {
     id: 'led',
     icon: <FiTv />,
+    image: '/large-dp-small.jpg',
     title: 'Large LED Display Panel',
     subtitle: 'Commercial Display Solutions',
     color: 'var(--primary)',
@@ -106,6 +111,7 @@ const Products = () => {
         title="Our Products"
         subtitle="Premium hardware and technology products from leading global brands with complete installation, warranty and support."
         breadcrumbs={[{ name: 'Products' }]}
+        image="/konika-lft-slider.jpg"
       />
       <section className="products-section" ref={sectionRef}>
         <div className="container">
@@ -113,7 +119,11 @@ const Products = () => {
             {products.map((p, i) => (
               <div key={p.id} id={p.id} className="product-card reveal" style={{ transitionDelay: `${i * 0.08}s` }}>
                 <div className="product-card-header">
-                  <div className="product-icon-wrap" style={{ color: p.color, background: 'var(--primary-light)' }}>{p.icon}</div>
+                  {p.image ? (
+                    <div className="product-image-wrap"><img src={p.image} alt={p.title} loading="lazy" /></div>
+                  ) : (
+                    <div className="product-icon-wrap" style={{ color: p.color, background: 'var(--primary-light)' }}>{p.icon}</div>
+                  )}
                   <div>
                     <h3 className="product-title">{p.title}</h3>
                     <div className="product-subtitle">{p.subtitle}</div>

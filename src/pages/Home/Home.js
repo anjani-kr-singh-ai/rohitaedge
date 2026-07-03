@@ -5,7 +5,6 @@ import SalesServices from '../../components/SalesServices/SalesServices';
 import OtherProducts from '../../components/OtherProducts/OtherProducts';
 import WhyChooseUs from '../../components/WhyChooseUs/WhyChooseUs';
 import ClientsSlider from '../../components/ClientsSlider/ClientsSlider';
-import Testimonials from '../../components/Testimonials/Testimonials';
 import ContactCTA from '../../components/ContactCTA/ContactCTA';
 
 const Home = () => {
@@ -17,7 +16,6 @@ const Home = () => {
       <OtherProducts />
       <WhyChooseUs />
       <ClientsSlider />
-      <Testimonials />
       <ContactCTA />
     </>
   );

@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { FiWifi, FiServer, FiMonitor, FiCamera, FiCloud, FiDatabase } from 'react-icons/fi';
 import './ImageSlider.css';
 
 const slides = [
   {
     id: 1,
     tag: 'Infrastructure',
-    icon: <FiWifi />,
+    image: '/network-solutions-slider.jpg',
     title: 'Enterprise Networking Cables',
     desc: 'Cat6 & Fiber Optic structured cabling solutions for maximum reliability and performance.',
     btn: 'Learn More',
@@ -14,7 +13,7 @@ const slides = [
   {
     id: 2,
     tag: 'Hardware',
-    icon: <FiServer />,
+    image: '/server_soultions.jpg',
     title: 'Enterprise Server Solutions',
     desc: 'High-performance servers with latest processors and redundant power supplies for 24/7 uptime.',
     btn: 'View Servers',
@@ -22,7 +21,7 @@ const slides = [
   {
     id: 3,
     tag: 'Computing',
-    icon: <FiMonitor />,
+    image: '/workstation-server-small.jpg',
     title: 'Desktops & Workstations',
     desc: 'Business-grade desktop computers and high-performance workstations for every requirement.',
     btn: 'Explore Range',
@@ -30,7 +29,7 @@ const slides = [
   {
     id: 4,
     tag: 'Surveillance',
-    icon: <FiCamera />,
+    image: '/cctv-small.jpg',
     title: 'CCTV & Video Wall Systems',
     desc: '4K IP cameras, NVR systems, and video wall solutions for complete security coverage.',
     btn: 'View Systems',
@@ -38,7 +37,7 @@ const slides = [
   {
     id: 5,
     tag: 'Cloud',
-    icon: <FiCloud />,
+    image: '/cloud-computing-small.jpg',
     title: 'Cloud Infrastructure',
     desc: 'Scalable cloud solutions with hybrid deployment options for modern enterprise needs.',
     btn: 'Cloud Services',
@@ -46,7 +45,7 @@ const slides = [
   {
     id: 6,
     tag: 'Data Center',
-    icon: <FiDatabase />,
+    image: '/datastorage.jpg',
     title: 'Data Center Solutions',
     desc: 'Complete data center design, implementation and management for enterprise clients.',
     btn: 'Data Center',
@@ -84,7 +83,6 @@ const ImageSlider = () => {
             <div className="slider-inner">
               <div className="slide-left">
                 <div className="slide-tag">{slide.tag}</div>
-                <div className="slide-icon-wrap">{slide.icon}</div>
                 <h2 className="slide-title">{slide.title}</h2>
                 <p className="slide-desc">{slide.desc}</p>
                 <button className="slide-btn">
@@ -96,11 +94,7 @@ const ImageSlider = () => {
               </div>
               <div className="slide-right">
                 <div className="slide-visual">
-                  <div className="slide-icon-big">{slide.icon}</div>
-                  <div className="slide-rings">
-                    <div className="s-ring"></div>
-                    <div className="s-ring s-ring-2"></div>
-                  </div>
+                  <img src={slide.image} alt={slide.title} loading="lazy" />
                 </div>
               </div>
             </div>

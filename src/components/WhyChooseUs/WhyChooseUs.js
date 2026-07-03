@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { FiAward, FiClock, FiBriefcase, FiDollarSign, FiZap, FiTruck, FiUsers, FiLock } from 'react-icons/fi';
+import React, { useEffect, useRef } from 'react';
+import { FiAward, FiClock, FiBriefcase, FiDollarSign, FiZap, FiTruck, FiHeart, FiLock, FiCheckCircle, FiShield, FiTag, FiHeadphones } from 'react-icons/fi';
 import './WhyChooseUs.css';
 
 const reasons = [
@@ -9,51 +9,25 @@ const reasons = [
   { icon: <FiDollarSign />, title: 'Affordable Pricing', desc: 'Competitive pricing with flexible payment plans and AMC contracts.' },
   { icon: <FiZap />, title: 'Latest Technology', desc: 'We partner with leading global technology brands and manufacturers.' },
   { icon: <FiTruck />, title: 'Fast Installation', desc: 'Swift deployment with minimal downtime and professional execution.' },
-  { icon: <FiUsers />, title: 'Trusted Clients', desc: '100+ satisfied enterprises across Telangana trust us for IT needs.' },
+  { icon: <FiHeart />, title: 'Client-First Approach', desc: 'Every engagement is built on transparency, honesty and genuine care for your business.' },
   { icon: <FiLock />, title: 'Secure Infrastructure', desc: 'End-to-end security architecture protecting your business data.' },
 ];
 
-const counters = [
-  { value: 500, suffix: '+', label: 'Projects' },
-  { value: 100, suffix: '+', label: 'Clients' },
-  { value: 20, suffix: '+', label: 'Solutions' },
-  { value: 99, suffix: '%', label: 'Customer Satisfaction' },
+const badges = [
+  { icon: <FiCheckCircle />, label: 'Genuine Products' },
+  { icon: <FiShield />, label: 'Certified Engineers' },
+  { icon: <FiTag />, label: 'Transparent Pricing' },
+  { icon: <FiHeadphones />, label: 'Dedicated Support' },
 ];
-
-const Counter = ({ value, suffix, label, active }) => {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    if (!active) return;
-    const duration = 1800;
-    const step = Math.ceil(value / (duration / 16));
-    let current = 0;
-    const t = setInterval(() => {
-      current = Math.min(current + step, value);
-      setCount(current);
-      if (current >= value) clearInterval(t);
-    }, 16);
-    return () => clearInterval(t);
-  }, [active, value]);
-  return (
-    <div className="counter-item">
-      <div className="counter-num">{count}<span>{suffix}</span></div>
-      <div className="counter-label">{label}</div>
-    </div>
-  );
-};
 
 const WhyChooseUs = () => {
   const sectionRef = useRef(null);
-  const [counterActive, setCounterActive] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(e => {
-          if (e.isIntersecting) {
-            e.target.classList.add('visible');
-            if (e.target.classList.contains('counters-wrap')) setCounterActive(true);
-          }
+          if (e.isIntersecting) e.target.classList.add('visible');
         });
       },
       { threshold: 0.2 }
@@ -87,8 +61,11 @@ const WhyChooseUs = () => {
 
         <div className="counters-wrap">
           <div className="counters-inner">
-            {counters.map((c) => (
-              <Counter key={c.label} {...c} active={counterActive} />
+            {badges.map((b) => (
+              <div key={b.label} className="counter-item">
+                <div className="counter-icon">{b.icon}</div>
+                <div className="counter-label">{b.label}</div>
+              </div>
             ))}
           </div>
         </div>

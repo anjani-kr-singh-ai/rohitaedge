@@ -1,11 +1,10 @@
 import React from 'react';
 import './ClientsSlider.css';
 
-const clients = [
-  'Andhra Pradesh Govt', 'Telangana State IT', 'HCL Technologies', 'Wipro Limited',
-  'TCS Hyderabad', 'HDFC Bank', 'State Bank of India', 'Apollo Hospitals',
-  'Yashoda Hospitals', 'ICICI Bank', 'Axis Bank', 'Infosys Ltd',
-  'L&T Constructions', 'Bharat Biotech', 'DRDOHyderabad', 'BSNL Telangana',
+const brands = [
+  'HP', 'Dell', 'Lenovo', 'Canon', 'Epson', 'Kyocera',
+  'Konica Minolta', 'Hikvision', 'Dahua', 'CP Plus', 'Axis',
+  'ZKTeco', 'BenQ', 'Optoma', 'Samsung', 'LG', 'Akuvox', 'Ricoh',
 ];
 
 const ClientsSlider = () => {
@@ -13,16 +12,16 @@ const ClientsSlider = () => {
     <section className="clients-section">
       <div className="container">
         <div className="section-header">
-          <span className="section-tag">Trusted By</span>
-          <h2 className="section-title">OUR <span>CLIENTS</span></h2>
-          <p className="section-subtitle">Proudly serving leading enterprises, government bodies and institutions across Telangana and beyond.</p>
+          <span className="section-tag">Our Partners</span>
+          <h2 className="section-title">BRANDS WE <span>DEAL IN</span></h2>
+          <p className="section-subtitle">We supply and install genuine, warranty-backed hardware from the world's leading technology brands.</p>
         </div>
       </div>
       <div className="clients-track-wrap">
         <div className="clients-fade-left"></div>
         <div className="clients-fade-right"></div>
         <div className="clients-track">
-          {[...clients, ...clients].map((name, i) => (
+          {[...brands, ...brands].map((name, i) => (
             <div key={i} className="client-logo">
               <div className="client-icon">
                 {name.slice(0, 2).toUpperCase()}

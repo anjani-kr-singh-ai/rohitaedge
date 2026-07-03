@@ -29,16 +29,16 @@ const Hero = () => {
           </h1>
           <p className="hero-subtitle">
             Enterprise Networking, Security Solutions, Servers, Storage,
-            Surveillance and IT Infrastructure Services — trusted by 100+ businesses across Telangana.
+            Surveillance and IT Infrastructure Services for businesses across Andhra Pradesh.
           </p>
           <div className="hero-actions">
             <Link to="/services" className="btn-primary">Explore Services</Link>
             <Link to="/contact" className="btn-outline">Contact Us</Link>
           </div>
           <div className="hero-stats">
-            {[['500+', 'Projects'], ['100+', 'Clients'], ['20+', 'Solutions'], ['99%', 'Satisfaction']].map(([num, label]) => (
+            {['Genuine Products', 'Certified Engineers', 'Transparent Pricing', 'Dedicated Support'].map((label) => (
               <div key={label} className="hero-stat">
-                <span className="hero-stat-num">{num}</span>
+                <svg className="hero-stat-check" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                 <span className="hero-stat-label">{label}</span>
               </div>
             ))}
@@ -62,7 +62,7 @@ const Hero = () => {
               ))}
             </div>
             <div className="dashboard-footer">
-              <span>500+ Projects Delivered</span>
+              <span>Genuine Products, Trusted Brands</span>
               <span className="dash-badge">Certified Engineers</span>
             </div>
           </div>

@@ -18,8 +18,8 @@ const navLinks = [
   { name: 'Products', path: '/products', dropdown: products },
   { name: 'Networking Solutions', path: '/networking-solutions' },
   { name: 'Services', path: '/services' },
-  { name: 'About SVS', path: '/about' },
-  { name: 'Clients', path: '/clients' },
+  { name: 'About Us', path: '/about' },
+  { name: 'Brands', path: '/clients' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -56,14 +56,10 @@ const Navbar = () => {
       <div className="navbar-inner container">
         {/* Logo */}
         <Link to="/" className="navbar-logo">
-          <div className="logo-icon-wrap">
-            <div className="logo-hex">
-              <span>RH</span>
-            </div>
-          </div>
+          <img src="/logo.png" alt="RH Network Solutions" className="logo-img" />
           <div className="logo-text-wrap">
-            <span className="logo-name">RH Network</span>
-            <span className="logo-tagline">Solutions</span>
+            <span className="logo-name">RH Network Solutions</span>
+            <span className="logo-tagline">IT Communications & Technology</span>
           </div>
         </Link>
 

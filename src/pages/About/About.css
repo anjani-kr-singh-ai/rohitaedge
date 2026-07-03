@@ -13,10 +13,11 @@
 .about-story-text p { font-size: 0.86rem; color: var(--text-secondary); line-height: 1.8; }
 
 .about-visual-box { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow-sm); }
+.about-visual-image { width: 100%; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; margin-bottom: 18px; }
+.about-visual-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .about-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.about-stat { text-align: center; padding: 18px; background: var(--bg-2); border-radius: var(--radius); border: 1px solid var(--border); }
-.about-stat-num { font-size: 1.8rem; font-weight: 800; color: var(--primary); }
-.about-stat-label { font-size: 0.72rem; color: var(--text-secondary); margin-top: 4px; }
+.about-stat { text-align: center; padding: 18px 14px; background: var(--bg-2); border-radius: var(--radius); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; min-height: 60px; }
+.about-stat-label { font-size: 0.82rem; font-weight: 700; color: var(--primary); }
 
 .values-section { margin-bottom: 56px; }
 .values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }

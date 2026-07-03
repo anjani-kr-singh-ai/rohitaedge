@@ -2,9 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './PageHero.css';
 
-const PageHero = ({ title, subtitle, breadcrumbs }) => {
+const PageHero = ({ title, subtitle, breadcrumbs, image = '/network-solutions-slider.jpg' }) => {
   return (
-    <section className="page-hero">
+    <section className="page-hero" style={image ? { backgroundImage: `url(${image})` } : undefined}>
+      {image && <div className="page-hero-overlay"></div>}
       <div className="container page-hero-container">
         <div className="breadcrumb">
           <Link to="/" className="bc-link">Home</Link>

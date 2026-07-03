@@ -1,48 +1,44 @@
 import React, { useEffect, useRef } from 'react';
-import {
-  FaDatabase, FaServer, FaCopy, FaLaptop,
-  FaPrint, FaTv, FaVideo, FaDesktop
-} from 'react-icons/fa';
 import './SalesServices.css';
 
 const services = [
   {
-    icon: <FaDatabase />,
+    image: '/datastorage.jpg',
     title: 'Data Storage',
     desc: 'Enterprise data storage solutions that reduce backup complexity and improve business continuity with NAS, SAN and hybrid cloud options.',
   },
   {
-    icon: <FaServer />,
+    image: '/server_soultions.jpg',
     title: 'Server Solutions',
     desc: 'Enterprise-grade server deployment, configuration and maintenance with latest technology and competitive pricing for all business sizes.',
   },
   {
-    icon: <FaCopy />,
+    image: '/photo-copier-small.jpg',
     title: 'Photocopier Solutions',
     desc: 'Multifunctional photocopier devices recommended according to business requirements with complete sales and after-sales support.',
   },
   {
-    icon: <FaLaptop />,
+    image: '/lap-desktop-small.jpg',
     title: 'Laptop & Desktops',
     desc: 'Wide range of laptops and desktop computers from leading brands at the best prices with long-term service relationships.',
   },
   {
-    icon: <FaPrint />,
+    image: '/printers-ploters-small.jpg',
     title: 'Printers & Plotters',
     desc: 'Industry-leading printers and plotters from HP, Canon, Epson with installation, maintenance and complete support services.',
   },
   {
-    icon: <FaTv />,
+    image: '/large-dp-small.jpg',
     title: 'Large LED Display Panel',
     desc: 'Premium commercial display panels with crystal-clear visuals available in multiple customizable models for advertising and presentation.',
   },
   {
-    icon: <FaVideo />,
+    image: '/video-conference.jpg',
     title: 'Video Conference',
     desc: 'Professional video conferencing systems for offices, educational institutions and enterprises with HD cameras and advanced audio.',
   },
   {
-    icon: <FaDesktop />,
+    image: '/workstation-server-small.jpg',
     title: 'Workstation',
     desc: 'High-performance engineering workstations for CAD, 3D rendering and data analytics with installation, optimization and technical support.',
   },
@@ -82,7 +78,7 @@ const SalesServices = () => {
               className="service-card reveal"
               style={{ transitionDelay: `${i * 0.07}s` }}
             >
-              <div className="service-icon">{service.icon}</div>
+              <div className="service-image"><img src={service.image} alt={service.title} loading="lazy" /></div>
               <h3 className="service-title">{service.title}</h3>
               <p className="service-desc">{service.desc}</p>
               <div className="service-arrow">

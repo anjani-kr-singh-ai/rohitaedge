@@ -13,16 +13,11 @@
 /* Logo */
 .navbar-logo { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 
-.logo-hex {
-  width: 36px; height: 36px; background: var(--primary);
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-}
-.logo-hex span { font-size: 0.76rem; font-weight: 800; color: #fff; }
+.logo-img { width: 38px; height: 38px; object-fit: contain; flex-shrink: 0; }
 
-.logo-text-wrap { display: flex; flex-direction: column; line-height: 1.1; }
-.logo-name { font-size: 0.9rem; font-weight: 700; color: var(--text); }
-.logo-tagline { font-size: 0.58rem; color: var(--primary); letter-spacing: 0.1em; text-transform: uppercase; }
+.logo-text-wrap { display: flex; flex-direction: column; line-height: 1.15; }
+.logo-name { font-size: 0.88rem; font-weight: 700; color: var(--text); white-space: nowrap; }
+.logo-tagline { font-size: 0.56rem; color: var(--primary); letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; }
 
 /* Desktop nav */
 .navbar-links { display: flex; align-items: center; gap: 2px; margin-left: auto; }

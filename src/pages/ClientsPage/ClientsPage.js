@@ -5,32 +5,34 @@ import PageHero from '../../components/PageHero/PageHero';
 import ContactCTA from '../../components/ContactCTA/ContactCTA';
 import './ClientsPage.css';
 
-const clientList = [
-  { name: 'Apollo Hospitals', sector: 'Healthcare', initial: 'AH', color: '#e74c3c' },
-  { name: 'Yashoda Hospitals', sector: 'Healthcare', initial: 'YH', color: '#e74c3c' },
-  { name: 'HDFC Bank', sector: 'Banking', initial: 'HB', color: '#2980b9' },
-  { name: 'State Bank of India', sector: 'Banking', initial: 'SB', color: '#1a3a6b' },
-  { name: 'ICICI Bank', sector: 'Banking', initial: 'IB', color: '#f5841f' },
-  { name: 'Wipro Limited', sector: 'IT', initial: 'WL', color: '#008fd7' },
-  { name: 'HCL Technologies', sector: 'IT', initial: 'HC', color: '#0060a9' },
-  { name: 'TCS Hyderabad', sector: 'IT', initial: 'TC', color: '#0052cc' },
-  { name: 'Telangana State IT', sector: 'Government', initial: 'TS', color: '#27ae60' },
-  { name: 'Andhra Pradesh Govt', sector: 'Government', initial: 'AP', color: '#16a085' },
-  { name: 'DRDO Hyderabad', sector: 'Defence', initial: 'DR', color: '#8e44ad' },
-  { name: 'Bharat Biotech', sector: 'Pharma', initial: 'BB', color: '#2ecc71' },
-  { name: 'L&T Constructions', sector: 'Construction', initial: 'LT', color: '#e67e22' },
-  { name: 'Axis Bank', sector: 'Banking', initial: 'AB', color: '#8b1a2e' },
-  { name: 'BSNL Telangana', sector: 'Telecom', initial: 'BS', color: '#c0392b' },
-  { name: 'Infosys Ltd', sector: 'IT', initial: 'IN', color: '#007cc3' },
+const brandList = [
+  { name: 'Canon', category: 'Photocopiers', initial: 'CN', color: '#BF0000' },
+  { name: 'HP', category: 'Laptops & Printers', initial: 'HP', color: '#0096D6' },
+  { name: 'Dell', category: 'Laptops & Desktops', initial: 'DL', color: '#007DB8' },
+  { name: 'Lenovo', category: 'Laptops & Desktops', initial: 'LN', color: '#E2231A' },
+  { name: 'Kyocera', category: 'Photocopiers', initial: 'KY', color: '#DA0C81' },
+  { name: 'Konica Minolta', category: 'Photocopiers', initial: 'KM', color: '#111111' },
+  { name: 'Epson', category: 'Printers & Projectors', initial: 'EP', color: '#003399' },
+  { name: 'Hikvision', category: 'CCTV & Surveillance', initial: 'HK', color: '#D0021B' },
+  { name: 'Dahua', category: 'CCTV & Surveillance', initial: 'DH', color: '#004C97' },
+  { name: 'CP Plus', category: 'CCTV & Surveillance', initial: 'CP', color: '#F7941E' },
+  { name: 'Axis', category: 'CCTV & Surveillance', initial: 'AX', color: '#1a1a1a' },
+  { name: 'ZKTeco', category: 'Biometric Devices', initial: 'ZK', color: '#00539B' },
+  { name: 'BenQ', category: 'Projectors', initial: 'BQ', color: '#8C1D82' },
+  { name: 'Optoma', category: 'Projectors', initial: 'OP', color: '#E4002B' },
+  { name: 'Samsung', category: 'LED Display Panels', initial: 'SM', color: '#1428A0' },
+  { name: 'LG', category: 'LED Display Panels', initial: 'LG', color: '#A50034' },
+  { name: 'Akuvox', category: 'IP Intercom', initial: 'AK', color: '#00A0E3' },
+  { name: 'Ricoh', category: 'Photocopiers', initial: 'RC', color: '#E60012' },
 ];
 
 const industries = [
-  { icon: <FaHospital />, name: 'Healthcare', count: '25+ Clients' },
-  { icon: <FaUniversity />, name: 'Banking & Finance', count: '20+ Clients' },
-  { icon: <FaLaptop />, name: 'IT & Software', count: '30+ Clients' },
-  { icon: <FaBuilding />, name: 'Government', count: '15+ Clients' },
-  { icon: <FaGraduationCap />, name: 'Education', count: '18+ Clients' },
-  { icon: <FaIndustry />, name: 'Manufacturing', count: '12+ Clients' },
+  { icon: <FaHospital />, name: 'Healthcare', desc: 'Reliable uptime for critical care environments' },
+  { icon: <FaUniversity />, name: 'Banking & Finance', desc: 'Secure, compliance-ready infrastructure' },
+  { icon: <FaLaptop />, name: 'IT & Software', desc: 'Scalable enterprise-grade setups' },
+  { icon: <FaBuilding />, name: 'Government', desc: 'Dependable project execution' },
+  { icon: <FaGraduationCap />, name: 'Education', desc: 'Smart classroom technology' },
+  { icon: <FaIndustry />, name: 'Manufacturing', desc: 'Rugged, industrial-grade systems' },
 ];
 
 const ClientsPage = () => {
@@ -47,26 +49,26 @@ const ClientsPage = () => {
   return (
     <div>
       <PageHero
-        title="Our Clients"
-        subtitle="Trusted by 100+ enterprises, government organizations and institutions across Telangana and Andhra Pradesh."
-        breadcrumbs={[{ name: 'Clients' }]}
+        title="Brands We Deal In"
+        subtitle="Genuine, warranty-backed technology products from the world's most trusted brands — installed and supported by our certified engineers."
+        breadcrumbs={[{ name: 'Brands' }]}
       />
 
       <section className="clients-page-section" ref={sectionRef}>
         <div className="container">
 
           <div className="section-header reveal">
-            <span className="section-tag">Who Trusts Us</span>
-            <h2 className="section-title">OUR VALUED <span>CLIENTS</span></h2>
-            <p className="section-subtitle">From startups to enterprise, we are proud to serve organisations across multiple industries.</p>
+            <span className="section-tag">Genuine & Certified</span>
+            <h2 className="section-title">BRANDS WE <span>DEAL IN</span></h2>
+            <p className="section-subtitle">We deal exclusively in original, warranty-backed products — no grey market, no compromises.</p>
           </div>
 
           <div className="clients-logo-grid">
-            {clientList.map((c, i) => (
+            {brandList.map((c, i) => (
               <div key={c.name} className="client-card reveal" style={{ transitionDelay: `${i * 0.04}s` }}>
                 <div className="client-card-icon" style={{ background: c.color }}>{c.initial}</div>
                 <div className="client-card-name">{c.name}</div>
-                <div className="client-card-sector">{c.sector}</div>
+                <div className="client-card-sector">{c.category}</div>
               </div>
             ))}
           </div>
@@ -74,14 +76,14 @@ const ClientsPage = () => {
           <div className="industries-section">
             <div className="section-header reveal">
               <span className="section-tag">Across Sectors</span>
-              <h2 className="section-title">INDUSTRIES <span>SERVED</span></h2>
+              <h2 className="section-title">INDUSTRIES <span>WE SERVE</span></h2>
             </div>
             <div className="industries-grid">
               {industries.map((ind, i) => (
                 <div key={ind.name} className="industry-card reveal" style={{ transitionDelay: `${i * 0.08}s` }}>
                   <div className="industry-icon">{ind.icon}</div>
                   <h3 className="industry-name">{ind.name}</h3>
-                  <div className="industry-count">{ind.count}</div>
+                  <div className="industry-count">{ind.desc}</div>
                 </div>
               ))}
             </div>
@@ -90,8 +92,8 @@ const ClientsPage = () => {
           <div className="success-section reveal">
             <div className="success-card">
               <h3 className="success-title">Partner With Us</h3>
-              <p className="success-desc">Join 100+ organizations that trust RH Network Solutions for their IT infrastructure. Get personalized solutions, enterprise-grade support and competitive pricing.</p>
-              <Link to="/contact" className="btn-primary">Become a Client</Link>
+              <p className="success-desc">Get genuine products, transparent pricing and dedicated after-sales support — tailored to your business needs, from a partner invested in getting it right.</p>
+              <Link to="/contact" className="btn-primary">Request a Quote</Link>
             </div>
           </div>
         </div>

@@ -11,13 +11,13 @@ const values = [
   { icon: <FiZap />, title: 'Innovation', desc: 'Continuously adopting the latest technologies to deliver cutting-edge solutions to our clients.' },
 ];
 
-const timeline = [
-  { year: '2010', title: 'Company Founded', desc: 'RH Network Solutions established in Secunderabad with a vision to deliver enterprise IT solutions.' },
-  { year: '2013', title: 'First 50 Clients', desc: 'Reached 50 enterprise clients across Hyderabad and Secunderabad with networking and CCTV solutions.' },
-  { year: '2016', title: 'Expansion', desc: 'Expanded service portfolio to include cloud infrastructure, server solutions and complete data centers.' },
-  { year: '2019', title: 'Government Projects', desc: 'Started executing government IT infrastructure projects across Telangana state offices.' },
-  { year: '2022', title: '100+ Clients', desc: 'Crossed 100 satisfied clients milestone with 500+ completed IT infrastructure projects.' },
-  { year: '2026', title: 'Future Forward', desc: 'Expanding into AI-powered surveillance, edge computing and smart building infrastructure solutions.' },
+const roadmap = [
+  { tag: '01', title: 'Genuine Products', desc: 'Sourcing exclusively from authorized distributors so every product comes with full manufacturer warranty.' },
+  { tag: '02', title: 'Transparent Pricing', desc: 'Clear, upfront quotations with no hidden costs — you know exactly what you are paying for.' },
+  { tag: '03', title: 'Expert Installation', desc: 'Certified engineers handle every setup with professional configuration and user training.' },
+  { tag: '04', title: 'Reliable AMC Support', desc: 'Proactive maintenance contracts with fast turnaround whenever an issue comes up.' },
+  { tag: '05', title: 'Long-Term Partnerships', desc: 'Earning trust project by project through honest advice and dependable service.' },
+  { tag: '06', title: 'Future-Ready Solutions', desc: 'Growing our expertise into cloud infrastructure, AI-driven surveillance and smart building technology.' },
 ];
 
 const About = () => {
@@ -35,7 +35,7 @@ const About = () => {
     <div>
       <PageHero
         title="About Us"
-        subtitle="Delivering enterprise IT infrastructure solutions across Telangana since 2010."
+        subtitle="A new-age IT infrastructure company delivering genuine products and dependable service across Andhra Pradesh."
         breadcrumbs={[{ name: 'About' }]}
       />
       <section className="about-section" ref={sectionRef}>
@@ -46,12 +46,12 @@ const About = () => {
             <div className="mv-card">
               <div className="mv-icon"><FiTarget /></div>
               <h3 className="mv-title">Our Mission</h3>
-              <p className="mv-desc">To empower businesses across Telangana with reliable, cutting-edge IT infrastructure solutions — delivered with expertise, transparency and commitment to excellence.</p>
+              <p className="mv-desc">To empower businesses across Andhra Pradesh with reliable, genuine IT infrastructure solutions — delivered with expertise, transparency and commitment to excellence.</p>
             </div>
             <div className="mv-card">
               <div className="mv-icon"><FiZap /></div>
               <h3 className="mv-title">Our Vision</h3>
-              <p className="mv-desc">To be Telangana's most trusted IT solutions partner — enabling businesses to thrive through innovative technology infrastructure that scales with their growth.</p>
+              <p className="mv-desc">To become Andhra Pradesh's most trusted IT solutions partner — enabling businesses to thrive through innovative technology infrastructure that scales with their growth.</p>
             </div>
           </div>
 
@@ -59,15 +59,17 @@ const About = () => {
           <div className="about-story reveal">
             <div className="about-story-text">
               <span className="section-tag">Our Story</span>
-              <h2 className="section-title" style={{ textAlign: 'left' }}>15+ Years of <span>IT Excellence</span></h2>
-              <p>Founded in 2010 in Secunderabad, RH Network Solutions began as a small networking consultancy with a big vision — to bridge the technology gap for businesses in Telangana. Over 15 years, we've grown into a full-service IT infrastructure company trusted by 100+ enterprises.</p>
-              <p style={{ marginTop: '12px' }}>From hospitals and schools to banks and government offices, our solutions power the technology backbone of organizations that serve millions of people across the region.</p>
+              <h2 className="section-title" style={{ textAlign: 'left' }}>Built On Trust & <span>Technology</span></h2>
+              <p>RH Network Solutions is a new-age IT infrastructure company based in Kurnool, Andhra Pradesh, built to bridge the technology gap for businesses across the region. We bring genuine products, transparent pricing and dedicated after-sales support to every project we take on.</p>
+              <p style={{ marginTop: '12px' }}>From networking and surveillance to office automation and cloud solutions, our goal is to become a dependable IT technology partner for businesses, institutions and government offices across Andhra Pradesh.</p>
             </div>
             <div className="about-visual-box">
+              <div className="about-visual-image">
+                <img src="/network-solutions-slider.jpg" alt="RH Network Solutions infrastructure" loading="lazy" />
+              </div>
               <div className="about-stat-grid">
-                {[['15+', 'Years Experience'], ['500+', 'Projects Done'], ['100+', 'Happy Clients'], ['99%', 'Satisfaction Rate']].map(([num, label]) => (
+                {['Genuine Products', 'Transparent Pricing', 'Dedicated Support', 'Modern Infrastructure'].map((label) => (
                   <div key={label} className="about-stat">
-                    <div className="about-stat-num">{num}</div>
                     <div className="about-stat-label">{label}</div>
                   </div>
                 ))}
@@ -92,18 +94,18 @@ const About = () => {
             </div>
           </div>
 
-          {/* Timeline */}
+          {/* Roadmap */}
           <div className="timeline-section">
             <div className="section-header reveal">
-              <span className="section-tag">Our Journey</span>
-              <h2 className="section-title">COMPANY <span>MILESTONES</span></h2>
+              <span className="section-tag">Our Promise</span>
+              <h2 className="section-title">OUR MISSION <span>GOING FORWARD</span></h2>
             </div>
             <div className="timeline">
               <div className="timeline-line"></div>
-              {timeline.map((t, i) => (
-                <div key={t.year} className={`timeline-item ${i % 2 === 0 ? 'left' : 'right'} reveal`}>
+              {roadmap.map((t, i) => (
+                <div key={t.tag} className={`timeline-item ${i % 2 === 0 ? 'left' : 'right'} reveal`}>
                   <div className="timeline-content">
-                    <div className="timeline-year">{t.year}</div>
+                    <div className="timeline-year">{t.tag}</div>
                     <div className="timeline-title">{t.title}</div>
                     <div className="timeline-desc">{t.desc}</div>
                   </div>

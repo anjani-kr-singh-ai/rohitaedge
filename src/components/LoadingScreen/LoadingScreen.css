@@ -7,11 +7,7 @@
 
 .loading-logo { display: flex; align-items: center; gap: 14px; }
 
-.logo-icon {
-  width: 52px; height: 52px; background: var(--primary);
-  border-radius: 10px; display: flex; align-items: center; justify-content: center;
-}
-.logo-letters { font-size: 1rem; font-weight: 800; color: #fff; }
+.loading-logo-img { width: 56px; height: 56px; object-fit: contain; }
 
 .logo-text { display: flex; flex-direction: column; }
 .logo-main { font-size: 1.1rem; font-weight: 700; color: var(--text); letter-spacing: 0.04em; }

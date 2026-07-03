@@ -14,13 +14,14 @@ import './ProductDetail.css';
 const sharedBenefits = [
   { icon: <FaShieldAlt />, title: 'Warranty Assured', desc: 'Complete manufacturer warranty with extended on-site support options.' },
   { icon: <FaTools />, title: 'Expert Installation', desc: 'Professional on-site installation, configuration and user training.' },
-  { icon: <FaClock />, title: 'Fast Turnaround', desc: 'Quick procurement with same-day or next-day delivery across Hyderabad.' },
+  { icon: <FaClock />, title: 'Fast Turnaround', desc: 'Quick procurement with prompt delivery across Kurnool and Andhra Pradesh.' },
   { icon: <MdSupportAgent />, title: 'AMC Support', desc: 'Annual maintenance contracts with SLA-backed response guarantees.' },
 ];
 
 const allProducts = {
   photocopier: {
     icon: <FaCopy />,
+    image: '/photo-copier-small.jpg',
     title: 'Photocopier',
     subtitle: 'Multifunctional Office Copiers',
     desc: 'High-performance multifunctional photocopiers from globally recognised brands. We supply, install and maintain copiers of all capacities — from small office units to high-volume production machines — with complete after-sales support and AMC packages.',
@@ -49,6 +50,7 @@ const allProducts = {
   },
   laptops: {
     icon: <FaLaptop />,
+    image: '/lap-desktop-small.jpg',
     title: 'Laptop & Desktops',
     subtitle: 'Business Computing Solutions',
     desc: 'A wide range of business-grade laptops and desktop computers from leading global brands. We offer bulk procurement, pre-configured OS deployment, asset tagging and long-term service contracts suitable for enterprises of all sizes.',
@@ -77,6 +79,7 @@ const allProducts = {
   },
   printers: {
     icon: <FaPrint />,
+    image: '/printers-ploters-small.jpg',
     title: 'Laserjet & Dot Matrix Printers',
     subtitle: 'Industrial Print Solutions',
     desc: 'Comprehensive range of laserjet and dot matrix printers for high-volume business printing. Includes professional installation, driver configuration, AMC and guaranteed consumable supply to keep your operations running without interruption.',
@@ -105,6 +108,7 @@ const allProducts = {
   },
   cctv: {
     icon: <FaVideo />,
+    image: '/cctv-small.jpg',
     title: 'CCTV Systems & Video Wall',
     subtitle: 'Complete Surveillance Solutions',
     desc: 'End-to-end CCTV surveillance solutions from site survey and design to installation and commissioning. We supply IP and analog cameras, NVR/DVR systems and large-format video walls for comprehensive, uninterrupted security coverage.',
@@ -217,6 +221,7 @@ const allProducts = {
   },
   led: {
     icon: <FaTv />,
+    image: '/large-dp-small.jpg',
     title: 'Large LED Display Panel',
     subtitle: 'Commercial Display Solutions',
     desc: 'Indoor and outdoor large-format LED display panels for advertising, digital signage, control rooms and events. We offer custom pixel pitches, cabinet configurations and full installation with content management software.',
@@ -295,7 +300,11 @@ const ProductDetail = () => {
           <div className="pd-overview reveal">
             {/* Left: Description + Features */}
             <div className="pd-left">
-              <div className="pd-icon-wrap">{product.icon}</div>
+              {product.image ? (
+                <div className="pd-image-banner"><img src={product.image} alt={product.title} loading="lazy" /></div>
+              ) : (
+                <div className="pd-icon-wrap">{product.icon}</div>
+              )}
               <p className="pd-desc">{product.desc}</p>
               <div className="pd-features-list">
                 {product.features.map(f => (

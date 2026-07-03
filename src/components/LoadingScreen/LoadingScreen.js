@@ -18,15 +18,13 @@ const LoadingScreen = () => {
     <div className="loading-screen">
       <div className="loading-content">
         <div className="loading-logo">
-          <div className="logo-icon">
-            <span className="logo-letters">RH</span>
-          </div>
+          <img src="/logo.png" alt="RH Network Solutions" className="loading-logo-img" />
           <div className="logo-text">
             <span className="logo-main">RH NETWORK</span>
             <span className="logo-sub">SOLUTIONS</span>
           </div>
         </div>
-        <div className="loading-tagline">Powering Businesses Through Smart Technology</div>
+        <div className="loading-tagline">IT Communications & Technology</div>
         <div className="loading-bar-wrap">
           <div className="loading-bar" style={{ width: `${Math.min(progress, 100)}%` }}></div>
         </div>

@@ -5,19 +5,21 @@ import { MdSupportAgent } from 'react-icons/md';
 import PageHero from '../../components/PageHero/PageHero';
 import './Contact.css';
 
+const officeAddress = 'H.No. 87/1317, Shop No. 01, 4th Class Employees Colony, Nagireddy Colony Road No. 7, Revenue Ward No. 87, Opp: Bishop Church, Kurnool – 518 002, Andhra Pradesh, India';
+
 const contactDetails = [
   {
     icon: <FaMapMarkerAlt />,
     label: 'Office Address',
-    value: '#10-3-32/9/15, 2nd Floor, Umakanth Commercial Complex, Opp. Bandhan Bank, East Marredpally, Secunderabad – 500026, Telangana',
-    href: 'https://maps.google.com/?q=East+Marredpally+Secunderabad+Telangana',
+    value: officeAddress,
+    href: `https://maps.google.com/?q=${encodeURIComponent(officeAddress)}`,
     linkLabel: 'View on Google Maps',
   },
   {
     icon: <FaPhoneAlt />,
     label: 'Phone Numbers',
-    value: '040 43057138\n040 40211968',
-    href: 'tel:04043057138',
+    value: '+91 98859 10396\n+91 99485 22001',
+    href: 'tel:+919885910396',
     linkLabel: 'Call Now',
   },
   {
@@ -94,7 +96,7 @@ const Contact = () => {
               <FaPhoneAlt className="strip-icon" />
               <div>
                 <div className="strip-label">Call Us Directly</div>
-                <a href="tel:04043057138" className="strip-val strip-link">040 43057138 / 040 40211968</a>
+                <a href="tel:+919885910396" className="strip-val strip-link">+91 98859 10396 / +91 99485 22001</a>
               </div>
             </div>
             <div className="strip-divider"></div>
@@ -137,7 +139,7 @@ const Contact = () => {
               <div className="contact-map-wrap">
                 <iframe
                   title="RH Network Solutions Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0!2d78.5!3d17.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b0000000001%3A0x0!2sEast+Marredpally%2C+Secunderabad%2C+Telangana!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                  src={`https://www.google.com/maps?q=${encodeURIComponent(officeAddress)}&output=embed`}
                   width="100%"
                   height="180"
                   style={{ border: 0 }}
