@@ -13,17 +13,17 @@ const Footer = () => {
           {/* Company Info */}
           <div className="footer-col footer-brand">
             <Link to="/" className="footer-logo">
-              <img src="/logo.png" alt="RH Network Solutions" className="footer-logo-img" />
+              <img src="/logo.png" alt="Rohitha Edge Enterprises" className="footer-logo-img" />
               <div>
-                <div className="footer-logo-name">RH Network Solutions</div>
+                <div className="footer-logo-name">Rohitha Edge</div>
                 <div className="footer-logo-sub">IT Communications & Technology</div>
               </div>
             </Link>
-            <p className="footer-tagline">IT Communications & Technology</p>
+            <p className="footer-tagline">Building Visions, Delivering Excellence</p>
             <div className="footer-address">
               <div className="footer-address-line">
                 <FiMapPin size={14} />
-                <span>H.No. 87/1317, Shop No. 01, 4th Class Employees Colony,<br />Nagireddy Colony Road No. 7, Revenue Ward No. 87,<br />Opp: Bishop Church, Kurnool – 518 002,<br />Andhra Pradesh, India</span>
+                <span>H.No. 87/1317, Shop No. 02, 4th Class Employees Colony,<br />Nagireddy Colony Road No. 7, Revenue Ward No. 87,<br />Opp: Bishop Church, Kurnool – 518002,<br />Andhra Pradesh, India</span>
               </div>
             </div>
             <div className="footer-socials">
@@ -83,9 +83,9 @@ const Footer = () => {
                 <FiPhone size={14} />
                 <span>+91 98859 10396{'\n'}+91 99485 22001</span>
               </a>
-              <a href="mailto:rhnetworksolutionsknl@gmail.com" className="footer-contact-item">
+              <a href="mailto:rohithaedgeenterprisespvtltd@gmail.com" className="footer-contact-item">
                 <FiMail size={14} />
-                <span>rhnetworksolutionsknl@gmail.com</span>
+                <span>rohithaedgeenterprisespvtltd@gmail.com</span>
               </a>
               <div className="footer-hours">
                 <FiClock size={14} />
@@ -103,7 +103,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
-          <span>© {year} RH Network Solutions. All Rights Reserved.</span>
+          <span>© {year} Rohitha Edge Enterprises Private Limited. All Rights Reserved.</span>
           <span className="footer-made">Made with care in Kurnool, Andhra Pradesh</span>
         </div>
       </div>

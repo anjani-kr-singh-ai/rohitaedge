@@ -111,7 +111,6 @@ const Products = () => {
         title="Our Products"
         subtitle="Premium hardware and technology products from leading global brands with complete installation, warranty and support."
         breadcrumbs={[{ name: 'Products' }]}
-        image="/konika-lft-slider.jpg"
       />
       <section className="products-section" ref={sectionRef}>
         <div className="container">

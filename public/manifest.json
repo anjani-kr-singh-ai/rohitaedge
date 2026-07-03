@@ -1,0 +1,15 @@
+{
+  "short_name": "RohithaEdge",
+  "name": "Rohitha Edge Enterprises Private Limited",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2563EB",
+  "background_color": "#FFFFFF"
+}

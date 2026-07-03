@@ -23,9 +23,8 @@ const Hero = () => {
             Enterprise IT Infrastructure
           </div>
           <h1 className="hero-title">
-            Empowering Businesses<br />
-            with <span>Smart IT</span><br />
-            Infrastructure
+            Building Visions,<br />
+            Delivering <span>Excellence</span>
           </h1>
           <p className="hero-subtitle">
             Enterprise Networking, Security Solutions, Servers, Storage,

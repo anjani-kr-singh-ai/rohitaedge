@@ -22,7 +22,7 @@
 .values-section { margin-bottom: 56px; }
 .values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .value-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 22px 18px; text-align: center; transition: var(--transition); cursor: default; box-shadow: var(--shadow-sm); }
-.value-card:hover { border-color: var(--primary); transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.value-card:hover { border-color: var(--primary); transform: translateY(-6px); box-shadow: var(--shadow-lift); }
 .value-icon { font-size: 1.5rem; color: var(--primary); margin-bottom: 10px; display: flex; justify-content: center; align-items: center; }
 .value-icon svg { width: 26px; height: 26px; }
 .value-title { font-size: 0.86rem; font-weight: 700; color: var(--primary); margin-bottom: 7px; }

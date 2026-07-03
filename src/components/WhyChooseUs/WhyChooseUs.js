@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
       <div className="container">
         <div className="section-header reveal">
           <span className="section-tag">Our Advantage</span>
-          <h2 className="section-title">WHY CHOOSE <span>RH NETWORK SOLUTIONS</span></h2>
+          <h2 className="section-title">WHY CHOOSE <span>ROHITHA EDGE</span></h2>
           <p className="section-subtitle">Delivering excellence through expertise, commitment and cutting-edge technology.</p>
         </div>
 

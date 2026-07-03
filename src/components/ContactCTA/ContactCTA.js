@@ -31,9 +31,9 @@ const ContactCTA = () => {
             +91 98859 10396
           </a>
           <span className="cta-sep">|</span>
-          <a href="mailto:rhnetworksolutionsknl@gmail.com" className="cta-contact-item">
+          <a href="mailto:rohithaedgeenterprisespvtltd@gmail.com" className="cta-contact-item">
             <FaEnvelope size={13} />
-            rhnetworksolutionsknl@gmail.com
+            rohithaedgeenterprisespvtltd@gmail.com
           </a>
         </div>
       </div>

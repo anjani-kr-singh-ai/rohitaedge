@@ -4,6 +4,7 @@ import ImageSlider from '../../components/ImageSlider/ImageSlider';
 import SalesServices from '../../components/SalesServices/SalesServices';
 import OtherProducts from '../../components/OtherProducts/OtherProducts';
 import WhyChooseUs from '../../components/WhyChooseUs/WhyChooseUs';
+import Testimonials from '../../components/Testimonials/Testimonials';
 import ClientsSlider from '../../components/ClientsSlider/ClientsSlider';
 import ContactCTA from '../../components/ContactCTA/ContactCTA';
 
@@ -15,6 +16,7 @@ const Home = () => {
       <SalesServices />
       <OtherProducts />
       <WhyChooseUs />
+      <Testimonials />
       <ClientsSlider />
       <ContactCTA />
     </>

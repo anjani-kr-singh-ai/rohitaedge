@@ -4,13 +4,13 @@ import './Testimonials.css';
 
 const testimonials = [
   {
-    name: 'Rajesh Kumar', role: 'IT Manager', company: 'Apollo Hospitals',
-    text: 'RH Network Solutions transformed our hospital network infrastructure. Their team was professional, fast, and delivered beyond expectations. The CCTV and server setup is outstanding.',
+    name: 'Rajesh Kumar', role: 'IT Manager', company: 'Private Hospital, Kurnool',
+    text: 'Rohitha Edge Enterprises transformed our hospital network infrastructure. Their team was professional, fast, and delivered beyond expectations. The CCTV and server setup is outstanding.',
     rating: 5, initial: 'RK',
   },
   {
-    name: 'Priya Sharma', role: 'Operations Head', company: 'Wipro Ltd, Hyderabad',
-    text: 'We partnered with RH Networks for our office IT setup in Secunderabad. From structured cabling to firewall configuration — everything was handled with great expertise and timely delivery.',
+    name: 'Priya Sharma', role: 'Operations Head', company: 'IT Services Firm, Hyderabad',
+    text: 'We partnered with Rohitha Edge for our office IT setup. From structured cabling to firewall configuration — everything was handled with great expertise and timely delivery.',
     rating: 5, initial: 'PS',
   },
   {
@@ -19,13 +19,13 @@ const testimonials = [
     rating: 5, initial: 'MF',
   },
   {
-    name: 'Sunita Reddy', role: 'Principal', company: 'Hyderabad Public School',
-    text: "RH Networks installed our school's interactive panels, PA system, and CCTV. The quality and value for money is excellent. Students and teachers love the new tech setup.",
+    name: 'Sunita Reddy', role: 'Principal', company: 'Educational Institution',
+    text: "Rohitha Edge installed our school's interactive panels, PA system, and CCTV. The quality and value for money is excellent. Students and teachers love the new tech setup.",
     rating: 5, initial: 'SR',
   },
   {
-    name: 'Anil Verma', role: 'IT Director', company: 'State Bank of India',
-    text: 'For our branch expansion project, RH Network Solutions provided complete networking and biometric setup. Their compliance with banking security standards and prompt support is commendable.',
+    name: 'Anil Verma', role: 'IT Director', company: 'Regional Bank Branch',
+    text: 'For our branch expansion project, Rohitha Edge Enterprises provided complete networking and biometric setup. Their compliance with banking security standards and prompt support is commendable.',
     rating: 5, initial: 'AV',
   },
 ];
@@ -33,7 +33,7 @@ const testimonials = [
 const Stars = ({ count }) => (
   <div className="stars">
     {[...Array(count)].map((_, i) => (
-      <FaStar key={i} size={14} color="#F59E0B" />
+      <FaStar key={i} size={14} color="var(--accent)" />
     ))}
   </div>
 );

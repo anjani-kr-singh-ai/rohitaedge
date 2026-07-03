@@ -5,7 +5,7 @@ import { MdSupportAgent } from 'react-icons/md';
 import PageHero from '../../components/PageHero/PageHero';
 import './Contact.css';
 
-const officeAddress = 'H.No. 87/1317, Shop No. 01, 4th Class Employees Colony, Nagireddy Colony Road No. 7, Revenue Ward No. 87, Opp: Bishop Church, Kurnool – 518 002, Andhra Pradesh, India';
+const officeAddress = 'H.No. 87/1317, Shop No. 02, 4th Class Employees Colony, Nagireddy Colony Road No. 7, Revenue Ward No. 87, Opp: Bishop Church, Kurnool – 518002, Andhra Pradesh, India';
 
 const contactDetails = [
   {
@@ -25,8 +25,8 @@ const contactDetails = [
   {
     icon: <FaEnvelope />,
     label: 'Email Address',
-    value: 'rhnetworksolutionsknl@gmail.com',
-    href: 'mailto:rhnetworksolutionsknl@gmail.com',
+    value: 'rohithaedgeenterprisespvtltd@gmail.com',
+    href: 'mailto:rohithaedgeenterprisespvtltd@gmail.com',
     linkLabel: 'Send Email',
   },
   {
@@ -104,7 +104,7 @@ const Contact = () => {
               <FaEnvelope className="strip-icon" />
               <div>
                 <div className="strip-label">Email Us</div>
-                <a href="mailto:rhnetworksolutionsknl@gmail.com" className="strip-val strip-link">rhnetworksolutionsknl@gmail.com</a>
+                <a href="mailto:rohithaedgeenterprisespvtltd@gmail.com" className="strip-val strip-link">rohithaedgeenterprisespvtltd@gmail.com</a>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ const Contact = () => {
 
               <div className="contact-map-wrap">
                 <iframe
-                  title="RH Network Solutions Location"
+                  title="Rohitha Edge Enterprises Location"
                   src={`https://www.google.com/maps?q=${encodeURIComponent(officeAddress)}&output=embed`}
                   width="100%"
                   height="180"
@@ -156,7 +156,7 @@ const Contact = () => {
                 <div className="contact-success">
                   <div className="success-icon-wrap"><FiCheckCircle /></div>
                   <h3>Message Sent Successfully!</h3>
-                  <p>Thank you for contacting RH Network Solutions. Our team will get back to you within 2 business hours.</p>
+                  <p>Thank you for contacting Rohitha Edge Enterprises. Our team will get back to you within 2 business hours.</p>
                   <button className="btn-primary" onClick={() => setSubmitted(false)}>Send Another Message</button>
                 </div>
               ) : (

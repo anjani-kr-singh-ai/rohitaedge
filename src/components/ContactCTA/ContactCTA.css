@@ -1,20 +1,39 @@
 .cta-section {
-  padding: 80px 0; text-align: center;
-  background: var(--bg-2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  padding: 60px 0 80px; text-align: center;
+  background: var(--bg);
   position: relative;
 }
 
-.cta-inner { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.cta-inner {
+  display: flex; flex-direction: column; align-items: center; gap: 16px;
+  background: var(--bg-3);
+  border: 1px solid rgba(37,99,235,0.12);
+  border-radius: var(--radius-xl);
+  padding: 56px 40px;
+  position: relative; overflow: hidden;
+  max-width: 1200px; margin: 0 auto;
+}
+.cta-inner::before {
+  content: ''; position: absolute; top: -80px; right: -80px;
+  width: 260px; height: 260px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(37,99,235,0.12), transparent 70%);
+  pointer-events: none;
+}
+.cta-inner::after {
+  content: ''; position: absolute; bottom: -90px; left: -60px;
+  width: 220px; height: 220px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(20,184,166,0.12), transparent 70%);
+  pointer-events: none;
+}
+.cta-inner > * { position: relative; z-index: 1; }
 
 .cta-badge {
   display: inline-flex; align-items: center; gap: 7px;
-  padding: 5px 14px; background: var(--primary-light);
-  border: 1px solid rgba(15,98,254,0.2); border-radius: 6px;
+  padding: 5px 14px; background: #fff;
+  border: 1px solid rgba(37,99,235,0.2); border-radius: 6px;
   font-size: 0.75rem; font-weight: 600; color: var(--primary);
 }
-.badge-dot { width: 6px; height: 6px; background: #22c55e; border-radius: 50%; flex-shrink: 0; }
+.badge-dot { width: 6px; height: 6px; background: var(--success); border-radius: 50%; flex-shrink: 0; }
 
 .cta-title {
   font-size: clamp(1.5rem, 3.2vw, 2.2rem);
@@ -43,4 +62,4 @@
 .cta-contact-item:hover { color: var(--primary); }
 .cta-sep { color: var(--border); }
 
-@media (max-width: 480px) { .cta-section { padding: 56px 0; } }
+@media (max-width: 480px) { .cta-section { padding: 40px 0 56px; } .cta-inner { padding: 40px 22px; } }

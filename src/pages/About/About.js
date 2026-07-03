@@ -60,12 +60,12 @@ const About = () => {
             <div className="about-story-text">
               <span className="section-tag">Our Story</span>
               <h2 className="section-title" style={{ textAlign: 'left' }}>Built On Trust & <span>Technology</span></h2>
-              <p>RH Network Solutions is a new-age IT infrastructure company based in Kurnool, Andhra Pradesh, built to bridge the technology gap for businesses across the region. We bring genuine products, transparent pricing and dedicated after-sales support to every project we take on.</p>
+              <p>Rohitha Edge Enterprises Private Limited is a new-age IT infrastructure company based in Kurnool, Andhra Pradesh, built to bridge the technology gap for businesses across the region. We bring genuine products, transparent pricing and dedicated after-sales support to every project we take on.</p>
               <p style={{ marginTop: '12px' }}>From networking and surveillance to office automation and cloud solutions, our goal is to become a dependable IT technology partner for businesses, institutions and government offices across Andhra Pradesh.</p>
             </div>
             <div className="about-visual-box">
               <div className="about-visual-image">
-                <img src="/network-solutions-slider.jpg" alt="RH Network Solutions infrastructure" loading="lazy" />
+                <img src="/network-solutions-slider.jpg" alt="Rohitha Edge Enterprises infrastructure" loading="lazy" />
               </div>
               <div className="about-stat-grid">
                 {['Genuine Products', 'Transparent Pricing', 'Dedicated Support', 'Modern Infrastructure'].map((label) => (

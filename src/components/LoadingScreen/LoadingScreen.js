@@ -18,10 +18,10 @@ const LoadingScreen = () => {
     <div className="loading-screen">
       <div className="loading-content">
         <div className="loading-logo">
-          <img src="/logo.png" alt="RH Network Solutions" className="loading-logo-img" />
+          <img src="/logo.png" alt="Rohitha Edge Enterprises" className="loading-logo-img" />
           <div className="logo-text">
-            <span className="logo-main">RH NETWORK</span>
-            <span className="logo-sub">SOLUTIONS</span>
+            <span className="logo-main">ROHITHA</span>
+            <span className="logo-sub">EDGE</span>
           </div>
         </div>
         <div className="loading-tagline">IT Communications & Technology</div>

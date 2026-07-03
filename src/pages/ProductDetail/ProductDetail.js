@@ -252,17 +252,6 @@ const allProducts = {
 
 const productOrder = ['photocopier', 'laptops', 'printers', 'cctv', 'biometric', 'projectors', 'intercom', 'led'];
 
-const productTitles = {
-  photocopier: 'Photocopier',
-  laptops: 'Laptop & Desktops',
-  printers: 'Laserjet & Dot Matrix Printers',
-  cctv: 'CCTV Systems & Video Wall',
-  biometric: 'Biometric Devices',
-  projectors: 'Projectors',
-  intercom: 'IP Intercom System',
-  led: 'Large LED Display Panel',
-};
-
 const ProductDetail = () => {
   const { id } = useParams();
   const product = allProducts[id];

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import {
   FaNetworkWired, FaPlug, FaWifi, FaLock, FaServer, FaCloud,
-  FaGlobe, FaTools, FaChartBar, FaSitemap, FaProjectDiagram, FaSearch
+  FaGlobe, FaTools, FaChartBar, FaSitemap, FaProjectDiagram
 } from 'react-icons/fa';
 import { MdSecurity } from 'react-icons/md';
 import PageHero from '../../components/PageHero/PageHero';

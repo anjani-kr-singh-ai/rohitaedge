@@ -56,9 +56,9 @@ const Navbar = () => {
       <div className="navbar-inner container">
         {/* Logo */}
         <Link to="/" className="navbar-logo">
-          <img src="/logo.png" alt="RH Network Solutions" className="logo-img" />
+          <img src="/logo.png" alt="Rohitha Edge Enterprises" className="logo-img" />
           <div className="logo-text-wrap">
-            <span className="logo-name">RH Network Solutions</span>
+            <span className="logo-name">Rohitha Edge</span>
             <span className="logo-tagline">IT Communications & Technology</span>
           </div>
         </Link>
