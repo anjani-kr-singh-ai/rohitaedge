@@ -23,7 +23,7 @@ const Footer = () => {
             <div className="footer-address">
               <div className="footer-address-line">
                 <FiMapPin size={14} />
-                <span>D.No. 87/1317, Shop No. 02, 4th Class Employees Colony,Nagireddy Colony Road No. 7, Revenue Ward No. 87,Opp: Bishop Church, Kurnool – 518002,Andhra Pradesh, India</span>
+                <span>D.No. 87/1317, Shop No. 02, 4th Class Employees Colony,Nagireddy Colony Road No. 7, Revenue Ward No. 87, Opp: Bishop Church, Kurnool – 518002, Andhra Pradesh, India</span>
               </div>
             </div>
           </div>

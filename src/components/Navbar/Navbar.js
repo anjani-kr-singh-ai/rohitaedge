@@ -60,10 +60,10 @@ const Navbar = () => {
         <div className="container navbar-utility-inner">
           <div className="utility-left">
             <a href="tel:+919885910396" className="utility-item">
-              <FiPhone size={12} /> +91 98859 10396
+              <FiPhone size={12} /> +91 98859 10396, +91 99485 22001
             </a>
             <a href="mailto:rohithaedgeenterprisespvtltd@gmail.com" className="utility-item">
-              <FiMail size={12} /> rohithaedgeenterprisespvtltd@gmail.com
+              <FiMail size={12} /> rohithaedgeenterprisespvtltd@gmail.com, info@rohithaedge.co.in
             </a>
           </div>
         </div>

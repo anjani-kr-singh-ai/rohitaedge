@@ -28,7 +28,7 @@ const ContactCTA = () => {
         <div className="cta-contact-row">
           <a href="tel:+919885910396" className="cta-contact-item">
             <FaPhoneAlt size={13} />
-            +91 98859 10396
+            +91 98859 10396, +91 99485 22001
           </a>
           <span className="cta-sep">|</span>
           <a href="mailto:rohithaedgeenterprisespvtltd@gmail.com" className="cta-contact-item">
