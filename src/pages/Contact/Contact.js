@@ -25,7 +25,7 @@ const contactDetails = [
   {
     icon: <FaEnvelope />,
     label: 'Email Address',
-    value: 'rohithaedgeenterprisespvtltd@gmail.com',
+    value: 'rohithaedgeenterprisespvtltd@gmail.com\ninfo@rohithaedge.co.in',
     href: 'mailto:rohithaedgeenterprisespvtltd@gmail.com',
     linkLabel: 'Send Email',
   },
@@ -96,7 +96,8 @@ const Contact = () => {
               <FaPhoneAlt className="strip-icon" />
               <div>
                 <div className="strip-label">Call Us Directly</div>
-                <a href="tel:+919885910396" className="strip-val strip-link">+91 98859 10396 / +91 99485 22001</a>
+                <a href="tel:+919885910396" className="strip-val strip-link">+91 98859 10396</a>
+                <a href="tel:+919948522001" className="strip-val strip-link">+91 99485 22001</a>
               </div>
             </div>
             <div className="strip-divider"></div>
@@ -105,6 +106,7 @@ const Contact = () => {
               <div>
                 <div className="strip-label">Email Us</div>
                 <a href="mailto:rohithaedgeenterprisespvtltd@gmail.com" className="strip-val strip-link">rohithaedgeenterprisespvtltd@gmail.com</a>
+                <a href="mailto:info@rohithaedge.co.in" className="strip-val strip-link">info@rohithaedge.co.in</a>
               </div>
             </div>
           </div>
