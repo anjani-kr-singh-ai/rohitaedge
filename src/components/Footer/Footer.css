@@ -3,12 +3,12 @@
 .footer-top { padding: 56px 0 44px; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 36px; }
 
-.footer-logo { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-.footer-logo-img { width: 40px; height: 40px; object-fit: contain; flex-shrink: 0; border-radius: 8px; }
-.footer-logo-name { font-size: 0.95rem; font-weight: 700; color: var(--text); font-family: var(--font-heading); }
-.footer-logo-sub { font-size: 0.62rem; color: var(--primary); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
-
-.footer-tagline { font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 14px; font-weight: 500; }
+.footer-logo { display: inline-flex; align-items: flex-start; gap: 10px; margin-bottom: 14px; }
+.footer-logo-img { width: 48px; height: 48px; object-fit: contain; flex-shrink: 0; border-radius: 8px; }
+.footer-logo-name { font-size: 1.3rem; }
+.footer-logo-name .brand-rest { font-size: 0.62em; letter-spacing: 0.05em; text-transform: uppercase; }
+.footer-logo-name .brand-motto { font-size: 0.44em; margin-top: 4px; }
+.footer-logo-sub { font-size: 0.62rem; color: var(--primary); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; margin-top: 4px; }
 .footer-address { margin-bottom: 18px; }
 .footer-address-line { display: flex; gap: 8px; align-items: flex-start; font-size: 0.79rem; color: var(--text-secondary); line-height: 1.7; }
 .footer-address-line svg { color: var(--primary); flex-shrink: 0; margin-top: 3px; }

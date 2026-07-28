@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { FiAward, FiClock, FiBriefcase, FiDollarSign, FiZap, FiTruck, FiHeart, FiLock, FiCheckCircle, FiShield, FiTag, FiHeadphones } from 'react-icons/fi';
+import BrandName from '../BrandName/BrandName';
 import './WhyChooseUs.css';
 
 const reasons = [
@@ -42,7 +43,7 @@ const WhyChooseUs = () => {
       <div className="container">
         <div className="section-header reveal">
           <span className="section-tag">Our Advantage</span>
-          <h2 className="section-title">WHY CHOOSE <span>ROHITHA EDGE</span></h2>
+          <h2 className="section-title">WHY CHOOSE <BrandName className="title-brand" /></h2>
           <p className="section-subtitle">Delivering excellence through expertise, commitment and cutting-edge technology.</p>
         </div>
 

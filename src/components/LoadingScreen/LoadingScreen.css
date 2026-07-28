@@ -7,11 +7,13 @@
 
 .loading-logo { display: flex; align-items: center; gap: 14px; }
 
-.loading-logo-img { width: 56px; height: 56px; object-fit: contain; }
+.loading-logo-img { width: 66px; height: 66px; object-fit: contain; }
 
 .logo-text { display: flex; flex-direction: column; }
-.logo-main { font-size: 1.1rem; font-weight: 700; color: var(--text); letter-spacing: 0.04em; }
-.logo-sub { font-size: 0.62rem; color: var(--primary); letter-spacing: 0.18em; text-transform: uppercase; }
+.logo-main { font-size: 1.7rem; letter-spacing: 0.01em; }
+.logo-main .brand-mark { letter-spacing: 0.02em; }
+.logo-main .brand-rest { font-size: 0.56em; letter-spacing: 0.06em; text-transform: uppercase; }
+.logo-main .brand-motto { font-size: 0.38em; letter-spacing: 0.02em; margin-top: 4px; }
 
 .loading-tagline { font-size: 0.85rem; color: var(--text-secondary); }
 

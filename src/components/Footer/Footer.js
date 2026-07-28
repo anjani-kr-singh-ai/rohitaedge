@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiMapPin, FiPhone, FiMail, FiClock, FiChevronRight, FiYoutube } from 'react-icons/fi';
+import BrandName from '../BrandName/BrandName';
 import './Footer.css';
 
 const Footer = () => {
@@ -13,17 +14,16 @@ const Footer = () => {
           {/* Company Info */}
           <div className="footer-col footer-brand">
             <Link to="/" className="footer-logo">
-              <img src="/logo.png" alt="Rohitha Edge Enterprises" className="footer-logo-img" />
+              <img src="/logo.png" alt="RohithaEdge Enterprises Private Limited" className="footer-logo-img" />
               <div>
-                <div className="footer-logo-name">Rohitha Edge</div>
-                <div className="footer-logo-sub">IT Communications & Technology</div>
+                <BrandName className="footer-logo-name" stacked motto />
+                <div className="footer-logo-sub"></div>
               </div>
             </Link>
-            <p className="footer-tagline">Building Visions, Delivering Excellence</p>
             <div className="footer-address">
               <div className="footer-address-line">
                 <FiMapPin size={14} />
-                <span>H.No. 87/1317, Shop No. 02, 4th Class Employees Colony,<br />Nagireddy Colony Road No. 7, Revenue Ward No. 87,<br />Opp: Bishop Church, Kurnool – 518002,<br />Andhra Pradesh, India</span>
+                <span>D.No. 87/1317, Shop No. 02, 4th Class Employees Colony,Nagireddy Colony Road No. 7, Revenue Ward No. 87,Opp: Bishop Church, Kurnool – 518002,Andhra Pradesh, India</span>
               </div>
             </div>
           </div>
@@ -77,9 +77,13 @@ const Footer = () => {
                 <FiMail size={14} />
                 <span>rohithaedgeenterprisespvtltd@gmail.com</span>
               </a>
+              <a href="mailto:info@rohithaedge.co.in" className="footer-contact-item">
+                <FiMail size={14} />
+                <span>info@rohithaedge.co.in</span>
+              </a>
               <div className="footer-hours">
                 <FiClock size={14} />
-                <span>Mon – Sat: 9:00 AM – 7:00 PM</span>
+                <span>Mon – Sat: 9:00 AM – 9:00 PM</span>
               </div>
             </div>
             <div className="footer-legal-links">
@@ -93,8 +97,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
-          <span>© {year} Rohitha Edge Enterprises Private Limited. All Rights Reserved.</span>
-          <span className="footer-made">Made with care in Kurnool, Andhra Pradesh</span>
+          <span>© {year} <BrandName />. All Rights Reserved.</span>
         </div>
       </div>
     </footer>

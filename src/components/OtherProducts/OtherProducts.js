@@ -11,8 +11,8 @@ const products = [
   { image: '/leaseline-small.jpg', title: 'Internet Leased Lines', desc: 'Dedicated high-speed internet connectivity with SLA guarantees.' },
   { image: '/public-address-small.jpg', title: 'Public Address System', desc: 'Professional PA systems for offices, malls and public spaces.' },
   { image: '/interactive-small.jpg', title: 'Interactive Panels', desc: 'Touch-enabled interactive flat panels for meetings and classrooms.' },
-  { image: '/ups-Inverters-small.jpg', title: 'UPS & Inverters', desc: 'Reliable power backup systems to keep critical IT equipment running during outages.' },
-  { icon: <FiLayout />, title: 'Smart Boards', desc: 'Digital whiteboards with wireless collaboration and annotation.' },
+  { image: '/ups-Inverters-small.jpg', title: 'UPS, Inverters & Stabilizers', desc: 'Reliable power backup and Power fluctuations systems to keep critical IT equipment running during outages.' },
+  { image: '/smartboard.png', title: 'Smart Boards', desc: 'Digital whiteboards with wireless collaboration and annotation.' },
 ];
 
 const OtherProducts = () => {

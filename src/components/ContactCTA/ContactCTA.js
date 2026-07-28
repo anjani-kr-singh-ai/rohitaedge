@@ -33,7 +33,7 @@ const ContactCTA = () => {
           <span className="cta-sep">|</span>
           <a href="mailto:rohithaedgeenterprisespvtltd@gmail.com" className="cta-contact-item">
             <FaEnvelope size={13} />
-            rohithaedgeenterprisespvtltd@gmail.com
+            rohithaedgeenterprisespvtltd@gmail.com, info@rohithaedge.co.in
           </a>
         </div>
       </div>

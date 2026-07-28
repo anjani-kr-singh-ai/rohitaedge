@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaServer, FaNetworkWired, FaCloud, FaDatabase, FaShieldAlt, FaVideo } from 'react-icons/fa';
+import { BrandMotto } from '../BrandName/BrandName';
 import './Hero.css';
 
 const dashItems = [
@@ -23,12 +24,11 @@ const Hero = () => {
             Enterprise IT Infrastructure
           </div>
           <h1 className="hero-title">
-            Building Visions,<br />
-            Delivering <span>Excellence</span>
+            <BrandMotto className="hero-motto" />
           </h1>
           <p className="hero-subtitle">
             Enterprise Networking, Security Solutions, Servers, Storage,
-            Surveillance and IT Infrastructure Services for businesses across Andhra Pradesh.
+            Surveillance and IT Infrastructure Services for businesses across India.
           </p>
           <div className="hero-actions">
             <Link to="/services" className="btn-primary">Explore Services</Link>

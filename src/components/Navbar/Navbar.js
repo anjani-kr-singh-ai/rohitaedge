@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FiPhone, FiMail } from 'react-icons/fi';
+import BrandName from '../BrandName/BrandName';
 import './Navbar.css';
 
 const products = [
@@ -72,10 +73,10 @@ const Navbar = () => {
         <div className="navbar-inner container">
           {/* Logo */}
           <Link to="/" className="navbar-logo">
-            <img src="/logo.png" alt="Rohitha Edge Enterprises" className="logo-img" />
+            <img src="/logo.png" alt="RohithaEdge Enterprises Private Limited" className="logo-img" />
             <div className="logo-text-wrap">
-              <span className="logo-name">Rohitha Edge</span>
-              <span className="logo-tagline">IT Communications & Technology</span>
+              <BrandName className="logo-name" stacked motto />
+              <span className="logo-tagline"></span>
             </div>
           </Link>
 

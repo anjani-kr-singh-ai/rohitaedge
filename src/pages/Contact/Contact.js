@@ -138,7 +138,7 @@ const Contact = () => {
 
               <div className="contact-map-wrap">
                 <iframe
-                  title="Rohitha Edge Enterprises Location"
+                  title="RohithaEdge Enterprises Private Limited Location"
                   src={`https://www.google.com/maps?q=${encodeURIComponent(officeAddress)}&output=embed`}
                   width="100%"
                   height="180"
@@ -156,7 +156,7 @@ const Contact = () => {
                 <div className="contact-success">
                   <div className="success-icon-wrap"><FiCheckCircle /></div>
                   <h3>Message Sent Successfully!</h3>
-                  <p>Thank you for contacting Rohitha Edge Enterprises. Our team will get back to you within 2 business hours.</p>
+                  <p>Thank you for contacting RohithaEdge Enterprises Private Limited. Our team will get back to you within 2 business hours.</p>
                   <button className="btn-primary" onClick={() => setSubmitted(false)}>Send Another Message</button>
                 </div>
               ) : (

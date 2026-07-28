@@ -18,6 +18,10 @@
   --text: #341022;
   --text-secondary: #6B5563;
   --text-muted: #A88999;
+  /* Brand wordmark colours */
+  --brand-blue: #0B2C6B;
+  --brand-orange: #F97316;
+  --brand-black: #000000;
   --gradient: linear-gradient(135deg, #DB2777, #9D174D);
   --gradient-soft: linear-gradient(135deg, #FDF2F8, #FCE7F3);
   --shadow-sm: 0 1px 4px rgba(157,23,77,0.07);

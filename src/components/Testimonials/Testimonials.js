@@ -5,12 +5,12 @@ import './Testimonials.css';
 const testimonials = [
   {
     name: 'Rajesh Kumar', role: 'IT Manager', company: 'Private Hospital, Kurnool',
-    text: 'Rohitha Edge Enterprises transformed our hospital network infrastructure. Their team was professional, fast, and delivered beyond expectations. The CCTV and server setup is outstanding.',
+    text: 'RohithaEdge Enterprises Private Limited transformed our hospital network infrastructure. Their team was professional, fast, and delivered beyond expectations. The CCTV and server setup is outstanding.',
     rating: 5, initial: 'RK',
   },
   {
     name: 'Priya Sharma', role: 'Operations Head', company: 'IT Services Firm, Hyderabad',
-    text: 'We partnered with Rohitha Edge for our office IT setup. From structured cabling to firewall configuration — everything was handled with great expertise and timely delivery.',
+    text: 'We partnered with RohithaEdge Enterprises Private Limited for our office IT setup. From structured cabling to firewall configuration — everything was handled with great expertise and timely delivery.',
     rating: 5, initial: 'PS',
   },
   {
@@ -20,12 +20,12 @@ const testimonials = [
   },
   {
     name: 'Sunita Reddy', role: 'Principal', company: 'Educational Institution',
-    text: "Rohitha Edge installed our school's interactive panels, PA system, and CCTV. The quality and value for money is excellent. Students and teachers love the new tech setup.",
+    text: "RohithaEdge Enterprises Private Limited installed our school's interactive panels, PA system, and CCTV. The quality and value for money is excellent. Students and teachers love the new tech setup.",
     rating: 5, initial: 'SR',
   },
   {
     name: 'Anil Verma', role: 'IT Director', company: 'Regional Bank Branch',
-    text: 'For our branch expansion project, Rohitha Edge Enterprises provided complete networking and biometric setup. Their compliance with banking security standards and prompt support is commendable.',
+    text: 'For our branch expansion project, RohithaEdge Enterprises Private Limited provided complete networking and biometric setup. Their compliance with banking security standards and prompt support is commendable.',
     rating: 5, initial: 'AV',
   },
 ];

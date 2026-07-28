@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import BrandName from '../BrandName/BrandName';
 import './LoadingScreen.css';
 
 const LoadingScreen = () => {
@@ -18,10 +19,9 @@ const LoadingScreen = () => {
     <div className="loading-screen">
       <div className="loading-content">
         <div className="loading-logo">
-          <img src="/logo.png" alt="Rohitha Edge Enterprises" className="loading-logo-img" />
+          <img src="/logo.png" alt="RohithaEdge Enterprises Private Limited" className="loading-logo-img" />
           <div className="logo-text">
-            <span className="logo-main">ROHITHA</span>
-            <span className="logo-sub">EDGE</span>
+            <BrandName className="logo-main" stacked motto />
           </div>
         </div>
         <div className="loading-tagline">IT Communications & Technology</div>

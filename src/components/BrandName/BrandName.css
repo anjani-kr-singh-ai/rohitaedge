@@ -1,0 +1,21 @@
+.brand-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.brand-name .brand-rohitha { color: var(--brand-blue); }
+.brand-name .brand-edge { color: var(--brand-orange); }
+.brand-name .brand-rest { color: var(--brand-black); }
+
+/* Stacked lockup: RohithaEdge / Enterprises Private Limited / motto */
+.brand-stacked { display: block; line-height: 1.25; }
+.brand-stacked .brand-mark,
+.brand-stacked .brand-rest,
+.brand-stacked .brand-motto { display: block; }
+.brand-stacked .brand-rest { font-size: 0.8em; font-weight: 600; letter-spacing: 0.01em; }
+.brand-stacked .brand-motto { font-size: 0.56em; margin-top: 2px; }
+
+/* Motto */
+.brand-motto { font-family: var(--font-heading); font-weight: 600; font-style: italic; }
+.brand-motto .motto-blue { color: var(--brand-blue); }
+.brand-motto .motto-orange { color: var(--brand-orange); }

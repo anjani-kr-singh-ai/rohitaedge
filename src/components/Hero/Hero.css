@@ -47,6 +47,9 @@
   margin-bottom: 20px; animation: fadeLeft 0.7s ease 0.1s both;
 }
 .hero-title span { color: var(--primary); }
+.hero-title .hero-motto { font: inherit; font-style: italic; }
+.hero-title .hero-motto .motto-blue,
+.hero-title .hero-motto .motto-orange { display: block; }
 
 .hero-subtitle {
   font-size: 1rem; color: var(--text-secondary);
