@@ -24,7 +24,6 @@ const LoadingScreen = () => {
             <BrandName className="logo-main" stacked motto />
           </div>
         </div>
-        <div className="loading-tagline">IT Communications & Technology</div>
         <div className="loading-bar-wrap">
           <div className="loading-bar" style={{ width: `${Math.min(progress, 100)}%` }}></div>
         </div>
