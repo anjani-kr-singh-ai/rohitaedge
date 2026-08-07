@@ -18,8 +18,8 @@ const clients = [
   { name: 'Agraseni Hospital', logo: '/client-logo/9.jpeg' },
   { name: 'Suseela Netralaya', logo: '/client-logo/13.jpeg' },
   { name: 'Sasha Nursing Home', logo: '/client-logo/8.jpeg' },
-  { name: 'Kurnool Medical College', logo: '/client-logo/17.jpeg' },
-  { name: 'STATE CANCER INSTITUTE KURNOOL', logo: '/client-logo/18.jpeg' },
+  { name: 'Kurnool Medical College', logo: '/client-logo/17.jpg' },
+  { name: 'STATE CANCER INSTITUTE KURNOOL', logo: '/client-logo/18.jpg' },
 ];
 
 const OurClients = () => {
