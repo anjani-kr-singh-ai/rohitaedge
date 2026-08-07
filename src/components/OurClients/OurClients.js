@@ -6,7 +6,7 @@ const clients = [
   { name: 'Rayalaseema University', logo: '/client-logo/6.jpeg' },
   { name: 'Yogi Vemana University', logo: '/client-logo/15.jpeg' },
   { name: 'Vikrama Simhapuri University', logo: '/client-logo/14.jpeg' },
-  { name: 'Kurnool Medical College', logo: '/client-logo/12.jpeg' },
+  { name: ' Shanthiram Medical College & Hospital Nandyal', logo: '/client-logo/12.jpeg' },
   { name: 'G. Pullaiah College of Engineering & Technology', logo: '/client-logo/4.jpeg' },
   { name: 'Rajeev Gandhi Memorial College of Engineering & Technology', logo: '/client-logo/7.jpeg' },
   { name: 'Bheema Institute of Technology & Science, Adoni', logo: '/client-logo/3.jpeg' },
@@ -18,6 +18,8 @@ const clients = [
   { name: 'Agraseni Hospital', logo: '/client-logo/9.jpeg' },
   { name: 'Suseela Netralaya', logo: '/client-logo/13.jpeg' },
   { name: 'Sasha Nursing Home', logo: '/client-logo/8.jpeg' },
+  { name: 'Kurnool Medical College', logo: '/client-logo/17.jpeg' },
+  { name: 'STATE CANCER INSTITUTE KURNOOL', logo: '/client-logo/18.jpeg' },
 ];
 
 const OurClients = () => {
